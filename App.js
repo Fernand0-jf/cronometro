@@ -1,19 +1,29 @@
 import React from "react";
-import {View, Text,StyleSheet} from 'react-native';
+import {View, Text,StyleSheet,Image} from 'react-native';
 
 export default function App(){
   return(
-    <View>
-      <Text>ola, tudo bem?</Text>
+    <View style={styles.container}>
+      
+      <Image
+      source={require('./src/crono.png')}
+      style={styles.img}
+      />
+
+
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container:{
-    felx:1,
+    flex:1,
     alignItems:'center',
-    justifyContent:'center'
+    justifyContent:'center',
+  },
+  img:{
+    width:230,
+    height:50
   }
 
 });
